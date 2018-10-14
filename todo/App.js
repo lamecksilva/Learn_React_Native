@@ -4,7 +4,12 @@ import { green } from "ansi-colors";
 
 class App extends React.Component {
   state = {
-    todo: "This is our message on screen"
+    text: "",
+    todo: ""
+  };
+
+  addTodo = () => {
+    this.setState({ todo: this.state.text });
   };
 
   render() {
@@ -14,9 +19,9 @@ class App extends React.Component {
         <TextInput
           style={styles.inputStyle}
           underlineColorAndroid="transparent"
-          onChangeText={text => this.setState({ todo: text })}
+          onChangeText={text => this.setState({ text })}
         />
-        <Button title="Add Todo" color="green" />
+        <Button title="Add Todo" color="green" onPress={this.addTodo} />
         <Text>{this.state.todo}</Text>
       </View>
     );
