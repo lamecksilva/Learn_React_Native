@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, TextInput, Button } from "react-native";
-import { green } from "ansi-colors";
 
 class App extends React.Component {
   state = {
@@ -18,15 +17,19 @@ class App extends React.Component {
   renderTodos = () => {
     return this.state.todo.map(t => {
       return (
-        <Text
-          style={{ fontSize: 25 }}
-          onPress={() => {
-            this.deleteTodo(t);
-          }}
-          key={t}
-        >
-          {t}
-        </Text>
+        <View>
+          <Text style={{ fontSize: 25 }} key={t}>
+            {t}
+          </Text>
+          <Button
+            key={t + 1}
+            style={styles.delBtn}
+            title="X"
+            onPress={() => {
+              this.deleteTodo(t);
+            }}
+          />
+        </View>
       );
     });
   };
@@ -75,6 +78,11 @@ const styles = {
     width: "100%",
     borderColor: "green",
     borderWidth: 1
+  },
+  delBtn: {
+    width: 20,
+    height: 20,
+    backgroundColor: "red"
   }
 };
 
