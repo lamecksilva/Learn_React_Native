@@ -8,7 +8,7 @@ html {
 
 .main {
   height: auto;
-  background-color: #8b8b8b;
+  background-color: #404850;
 }
 
 .dashTitle {
@@ -17,9 +17,24 @@ html {
   font-size: 3rem;
   color: white;
 }
-
+.blockTitle {
+  color: rgb(25, 49, 93);
+}
 .chartContainer {
-  height: 250px;
-  background-color: #cfcbcb;
-  margin: 2%;
+  min-height: 250px;
+  background-color: #d1e0d0;
+  margin: auto;
+  border: 1px solid #212529;
+  display: block;
+}
+
+.temp {
+  display: table;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashTitle {
+    font-size: 2rem;
+  }
 }
