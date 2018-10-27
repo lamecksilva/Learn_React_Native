@@ -1,0 +1,25 @@
+html {
+  overflow-x: hidden;
+}
+.App {
+  width: 100vw;
+  padding: 0;
+}
+
+.main {
+  height: auto;
+  background-color: #8b8b8b;
+}
+
+.dashTitle {
+  margin-bottom: 5vh;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.chartContainer {
+  height: 250px;
+  background-color: #cfcbcb;
+  margin: 2%;
+}
