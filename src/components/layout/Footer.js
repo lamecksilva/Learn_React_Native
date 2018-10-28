@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <footer className="bg-dark text-white p-4 text-center">
+        <footer className="bg-light text-dark p-2 text-center">
           Copyright &copy; {new Date().getFullYear()} SensHome - Lameck Sandro
         </footer>
       </div>

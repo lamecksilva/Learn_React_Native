@@ -8,24 +8,28 @@ html {
 
 .main {
   height: auto;
-  background-color: #404850;
+  background-color: #a6c9e9;
 }
 
 .dashTitle {
   margin-bottom: 5vh;
   text-align: center;
   font-size: 3rem;
-  color: white;
+  color: rgb(16, 82, 136);
 }
+
 .blockTitle {
-  color: rgb(25, 49, 93);
+  color: rgb(54, 91, 160);
+  font-size: 1.5rem;
 }
+
 .chartContainer {
-  min-height: 250px;
-  background-color: #d1e0d0;
+  min-height: 180px;
+  background-color: #f8f9fa;
   margin: auto;
-  border: 1px solid #212529;
+  border: 1px solid #527292;
   display: block;
+  border-radius: 10px;
 }
 
 .temp {
@@ -37,4 +41,12 @@ html {
   .dashTitle {
     font-size: 2rem;
   }
+}
+.nav-block {
+  background-color: #f8f9fa;
+  width: auto;
+  float: left;
+  margin: 0;
+  height: 100%;
+  border: 1px solid #527292;
 }
