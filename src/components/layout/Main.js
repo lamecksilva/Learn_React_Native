@@ -11,32 +11,40 @@ class Main extends Component {
       <div className="container-fluid main mb-3 pb-3">
         <h2 className="dashTitle mb-3">DashBoard</h2>
         <div className="row">
-          <div className="col-md-2 " style={{ paddingLeft: 0 }}>
-            <nav class="nav flex-column nav-block">
-              <h3 className="text-center blockTitle">Sensores Disponíveis</h3>
-              <a class="nav-link active mt-3" href="/">
+          <div className="col-md-2 col-sm-12 col-xs-12 pl-0 pr-0">
+            <nav class="nav flex-column nav-block nav-pills nav-fill">
+              <h3 className="text-center blockTitle mt-3">
+                Sensores Disponíveis
+              </h3>
+              <a class="nav-link active mt-3 ml-3 mr-3" href="/">
                 <span>
                   <i className="fas fa-arrow-right mr-2" />
                 </span>
                 Cozinha
               </a>
-              <a class="nav-link" href="/">
+              <a class="nav-link mt-3 ml-3 mr-3" href="/">
                 <span>
                   <i className="fas fa-arrow-right mr-2" />
                 </span>
                 Sala
               </a>
-              <a class="nav-link" href="/">
+              <a class="nav-link mt-3 ml-3 mr-3" href="/">
                 <span>
                   <i className="fas fa-arrow-right mr-2" />
                 </span>
                 Quarto 1
               </a>
-              <a class="nav-link" href="/">
+              <a class="nav-link mt-3 ml-3 mr-3" href="/">
                 <span>
                   <i className="fas fa-arrow-right mr-2" />
                 </span>
                 Quarto 2
+              </a>
+              <a class="nav-link mt-3 ml-3 mr-3" href="/">
+                <span>
+                  <i className="fas fa-arrow-right mr-2" />
+                </span>
+                Area de Serviço
               </a>
             </nav>
           </div>
